@@ -19,7 +19,7 @@ public class SpringbootProducerApplicationTests {
         Order order = new Order();
         order.setId(2018092102);
         order.setName("测试订单1");
-        order.setMessageId(System.currentTimeMillis()+"$"+UUID.randomUUID().toString());
+        order.setMessageId(System.currentTimeMillis()+"$"+UUID.randomUUID());
         orderService.createOrder(order);
     }
 
